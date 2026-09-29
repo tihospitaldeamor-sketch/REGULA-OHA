@@ -4,7 +4,7 @@
       (Supabase > Project Settings > API)
    2) Use SOMENTE a chave "anon / public". Nunca a "service_role".
    ========================================================== */
-const SUPABASE_URL      = "https://sfljtynpmreaqxnrembt.supabase.co/rest/v1/";
+const SUPABASE_URL      = "https://sfljtynpmreaqxnrembt.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_ujIxYpCvuLWRmzBLdsZSgA_BmWRl95y";
 
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
