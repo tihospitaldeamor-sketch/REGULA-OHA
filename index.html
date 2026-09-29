@@ -357,6 +357,14 @@ input.invalid{border-color:var(--red)!important;box-shadow:0 0 0 3px rgba(200,30
 </div>
 
 <script>
+(async function() {
+ const {
+data: { session }
+ } = await supabase.auth.getSession();
+ if (!session) {
+   window.location.href = 'login.html';
+ }
+})();
 /* ================= ÍCONES ================= */
 const ICONS={
  grid:'<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>',
